@@ -4,11 +4,14 @@
   "description": "Projeto para aprender nodejs e mvc",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "sousafilp",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
   }
 }
