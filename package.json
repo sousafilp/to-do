@@ -1,0 +1,14 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "Projeto para aprender nodejs e mvc",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "sousafilp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
