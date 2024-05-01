@@ -221,3 +221,41 @@ div#btns a#btnYes:hover {
   background-color: #5d8e91;
   color: #fff;
 }
+
+.message {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 5px;
+}
+
+.message-danger {
+  background-color: #fdadfd;
+  color: #940b6b;
+}
+
+.message-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+span#close-message {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 2rem;
+}
+
+span#close-message:hover {
+  color: #940b6b;
+}
