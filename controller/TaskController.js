@@ -5,7 +5,7 @@ let type = "";
 
 const getAllTasks = async (req, res) => {
   try {
-    setTimeout(() =>{
+    setTimeout(() => {
       message = "";
       type = "";
     }, 2000);
@@ -81,10 +81,22 @@ const deleteOneTask = async (req, res) => {
   }
 };
 
+const taskCheck = async (req, res) => {
+  try {
+    const task = await Task.findOne({ _id: req.params.id });
+    task.check ? task.check = false : task.check = true;
+    await Task.updateOne({ _id: req.params.id }, task);
+    res.redirect("/");
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
+};
+
 module.exports = {
   getAllTasks,
   createTask,
   getById,
   updateOneTask,
   deleteOneTask,
+  taskCheck,
 };
