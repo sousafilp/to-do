@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectToDb = () => {
   mongoose
     .connect(
-      "mongodb+srv://root:devfoda1@todolist.nkmr7du.mongodb.net/?retryWrites=true&w=majority&appName=todolist",
+      process.env.DB_URI,
       {
         autoIndex: true,
       }
